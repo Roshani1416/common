@@ -35,7 +35,8 @@ embed_model = SentenceTransformer("all-MiniLM-L6-v2")
 qa_pipeline = pipeline("text2text-generation", model="google/flan-t5-small", device=device)
 caption_processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-base")
 caption_model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-base")
-whisper_model = whisper.load_model("base", download_root="models", local_files_only=True)
+whisper_model = whisper.load_model("base")
+
 
 # ✅ Extract Frames Using PIL (Replaces OpenCV)
 def extract_frames(video_path, output_folder, fps=0.2):
