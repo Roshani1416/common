@@ -20,7 +20,8 @@ caption_processor = BlipProcessor.from_pretrained("Salesforce/blip-image-caption
 caption_model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-base")
 
 # ✅ Qdrant Setup
-qdrant = QdrantClient("http://localhost:6333")
+QDRANT_CLOUD_URL = "https://a03a15ac-6de0-4fcf-b206-8d0354c2827b.us-west-1-0.aws.cloud.qdrant.io"
+QDRANT_API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIiwiZXhwIjoxNzQ3NDcwNDI4fQ.gwrFSabmd34SQwSzccDex4A0wkFPahaGL8NfgTezE-Y"
 COLLECTION_NAME = "video_rag"
 
 # ✅ Ensure Collection Exists
