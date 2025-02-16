@@ -1,0 +1,9 @@
+ffmpeg==1.4
+openai_whisper==20240930
+opencv_python==4.11.0.86
+Pillow==11.1.0
+qdrant_client==1.13.2
+sentence_transformers==3.4.0
+streamlit==1.41.1
+torch==2.5.1+cu118
+transformers==4.47.1
